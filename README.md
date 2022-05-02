@@ -10,7 +10,7 @@
 - `cargo run` will build and run the project (From target/debug/<Project_Name>
 - `cargo run --release` will build and run the release version of the <Project_Name>, the execution is faster as compated to debug version and compilation process is slower than debug version.
 
-## Few things to know before-hand:
+## Few things to know beforehand:
 - Scope rules with `{` and `}` are similar to C/C++
 - `let` is used to declare a variable
 - `let` statement can destructure the data on RHS and use it to initialize the patterns on the LHS
