@@ -13,7 +13,7 @@
 ## Few things to know beforehand:
 - Scope rules with `{` and `}` are similar to C/C++
 - `let` is used to declare a variable
-- `let` statement can destructure the data on RHS and use it to initialize the patterns on the LHS
+- `let` statement can destructure the data on RHS and use it to initialize the patterns on the LHS. `let (foo, bar, baz) = {10, 1, 89);` will set the value of `foo` to `10`, `bar` to `1` and `baz` to `89`. It is as good as declaring each of these 3 variables separately.
 - Rust is a strongly type-annotated language, however, you can leave the type-annotation aside if Rust can determine the correct daya type for the variable
 - All variable by-default are immutable. This is for speed optimization, safety and concurrency.
 - `let mut` syntax is used to override the immutability.
@@ -52,9 +52,9 @@ And, `foo()` will be used in the following manner:
 
 **Note 2:** `let x: u16 = 5;` can also be expressed as `let x = 5u16` or even better readble by using `let x = 5_u16`. This is called suffix notation. This is consistant acress all primitive data types. This is useful for implementations where it is required to pass a literals to a generic function that accepts multiple numeric types.
 
-**Note 3: ** `usize` and/or `isize` is the size of the pointer type for the target system/platform (16-bit vs 32-bit vs 64-bt). Typically used to index for arrays or vectors.
+**Note 3:** `usize` and/or `isize` is the size of the pointer type for the target system/platform (16-bit vs 32-bit vs 64-bt). Typically used to index for arrays or vectors.
 
-**Note 4** :: _Arity_ is the count of the items in the tuple. As of today, maximum arity can be 12.
+**Note 4:** _Arity_ is the count of the items in the tuple. As of today, maximum arity can be 12.
 
 **Note 5**: Maximum count of elements in arrays is restricted to 32.
 
@@ -70,7 +70,7 @@ The `if - else if - else` statements works pretty much the same, they are syntac
         "Empty"
     }; 
     
-**Notes: **
+**Notes:**
 - No `;` after the branch
 - In above case, a `return` can not be used as the end results needs to be populated into `msg`
 - In above case, all the blocks return the same type -- A string in this case
